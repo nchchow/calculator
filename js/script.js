@@ -1,5 +1,8 @@
+// global variables
+var displayValue = 0;
+
 // display
-const displayVal = value => {
+const updateDisplay = value => {
     const display = document.querySelector('#result');
     if(display.textContent === '0') {
         display.textContent = '';
