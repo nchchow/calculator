@@ -7,6 +7,11 @@ const displayVal = value => {
     display.textContent += value;
 }
 
+const clr = () => {
+    const display = document.querySelector('#result');
+    display.textContent = '0';
+}
+
 // operations
 const add = (a, b) => (a + b);
 
