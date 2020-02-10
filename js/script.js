@@ -1,3 +1,12 @@
+// display
+const displayVal = value => {
+    const display = document.querySelector('#result');
+    if(display.textContent === '0') {
+        display.textContent = '';
+    }
+    display.textContent += value;
+}
+
 // operations
 const add = (a, b) => (a + b);
 
