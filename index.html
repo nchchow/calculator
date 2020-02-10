@@ -3,7 +3,15 @@
 
 <head>
     <title>Calculator</title>
-
+    <script>
+    const displayVal = value => {
+        const display = document.querySelector('#result');
+        if(display.textContent === '0') {
+            display.textContent = '';
+        }
+        display.textContent += value;
+    }
+    </script>
 </head>
 
 <body>
@@ -13,26 +21,26 @@
                 <td colspan='4' id='result'>0</td>
             </tr>
             <tr>
-                <td><input type='button' value='7'></td>
-                <td><input type='button' value='8'></td>
-                <td><input type='button' value='9'></td>
+                <td><input type='button' value='7' onclick='displayVal("7")'></td>
+                <td><input type='button' value='8' onclick='displayVal("8")'></td>
+                <td><input type='button' value='9' onclick='displayVal("9")'></td>
                 <td><input type='button' value='/'></td>
             </tr>
             <tr>
-                <td><input type='button' value='4'></td>
-                <td><input type='button' value='5'></td>
-                <td><input type='button' value='6'></td>
+                <td><input type='button' value='4' onclick='displayVal("4")'></td>
+                <td><input type='button' value='5' onclick='displayVal("5")'></td>
+                <td><input type='button' value='6' onclick='displayVal("6")'></td>
                 <td><input type='button' value='*'></td>
             </tr>
             <tr>
-                <td><input type='button' value='1'></td>
-                <td><input type='button' value='2'></td>
-                <td><input type='button' value='3'></td>
+                <td><input type='button' value='1' onclick='displayVal("1")'></td>
+                <td><input type='button' value='2' onclick='displayVal("2")'></td>
+                <td><input type='button' value='3' onclick='displayVal("3")'></td>
                 <td><input type='button' value='+'></td>
             </tr>
             <tr>
                 <td><input type='button' value='C'></td>
-                <td><input type='button' value='0'></td>
+                <td><input type='button' value='0' onclick='displayVal("0")'></td>
                 <td><input type='button' value='='></td>
                 <td><input type='button' value='-'></td>
             </tr>
